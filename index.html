@@ -138,8 +138,14 @@
         <li>앱 버전, 기기 정보, 접속 시간 등 서비스 운영에 필요한 기술 정보</li>
         <li>오류 분석 및 서비스 개선에 필요한 비식별 이용 정보</li>
       </ul>
+      <p>Android용 Google Play 버전에서는 광고와 인앱 구매 기능 제공을 위해 다음 정보가 추가로 처리될 수 있습니다.</p>
+      <ul>
+        <li>Google Mobile Ads SDK(AdMob): IP 주소(대략적인 위치 추정에 사용될 수 있음), 앱 실행·탭·동영상 조회와 같은 앱 상호작용, 앱 및 SDK 성능 진단 정보, Android 광고 ID(AAID)·앱 세트 ID 및 기타 기기 또는 계정 식별자</li>
+        <li>Google Play 결제: 구매 상품 ID, 구매 토큰, 구매 상태 등 광고 제거 상품의 제공 및 복원에 필요한 거래 정보</li>
+      </ul>
       <p>
-        본 게임은 주민등록번호, 주소, 전화번호, 결제카드 정보 등 민감한 개인정보를 직접 수집하지 않습니다.
+        본 게임은 주민등록번호, 주소, 전화번호, 결제카드 정보 등 민감한 개인정보를 직접 수집하지 않으며,
+        결제카드 정보는 Google Play가 처리하고 Studio Eliud 또는 게임에 제공되지 않습니다.
       </p>
 
       <h3>2. 정보의 이용 목적</h3>
@@ -147,7 +153,9 @@
       <ul>
         <li>게임 진행 및 기록 저장</li>
         <li>온라인 랭킹 제공</li>
-        <li>부정 이용 방지</li>
+        <li>부정 이용, 광고 사기 및 보안 위협 방지</li>
+        <li>광고 제공, 빈도 관리, 광고 성과 측정 및 분석</li>
+        <li>Google Play 구매 권한 확인 및 복원</li>
         <li>게임 오류 확인 및 서비스 안정화</li>
         <li>이용자 문의 대응</li>
         <li>서비스 개선 및 업데이트 품질 향상</li>
@@ -158,6 +166,10 @@
         수집된 정보는 서비스 제공에 필요한 기간 동안 보관됩니다.
         이용자가 삭제를 요청하거나 서비스 제공 목적이 달성된 경우, 관련 법령에 따라 보관이 필요한 경우를 제외하고
         지체 없이 삭제하거나 식별할 수 없는 형태로 처리합니다.
+      </p>
+      <p>
+        설정, 게임 진행, 점수 및 구매 권한과 같은 로컬 데이터는 이용자의 기기에 저장되며,
+        앱 데이터 삭제 또는 앱 제거 시 삭제될 수 있습니다. Google 및 Supabase가 처리하는 정보는 각 서비스의 정책과 법적 의무에 따라 보관됩니다.
       </p>
 
       <h3>4. 제3자 서비스 및 데이터 처리</h3>
@@ -174,7 +186,22 @@
         <li>서비스 운영에 필요한 기술 정보</li>
       </ul>
       <p>
-        Studio Eliud는 법령에 따른 경우를 제외하고 이용자의 개인정보를 임의로 제3자에게 판매하거나 제공하지 않습니다.
+        <strong>Google AdMob 및 User Messaging Platform(UMP):</strong>
+        Android용 Google Play 버전은 전면 광고와 보상형 광고를 제공하기 위해 Google AdMob을 사용합니다.
+        Google Mobile Ads SDK는 광고 제공, 분석 및 부정행위 방지를 위해 위에 명시한 광고 관련 정보를 자동으로 수집하고 Google과 공유할 수 있습니다.
+        개인정보 동의가 필요한 지역에서는 UMP를 통해 동의 또는 개인정보 선택 화면을 표시하며,
+        필요한 경우 게임 설정의 “개인정보 선택”에서 선택 사항을 다시 확인하거나 변경할 수 있습니다.
+      </p>
+      <p>
+        <strong>Google Play 결제:</strong>
+        광고 제거 상품은 Google Play 결제 시스템을 사용합니다. Google은 결제와 거래를 처리하며,
+        게임은 구매 권한 제공 및 복원을 위해 상품 ID, 구매 토큰 및 구매 상태를 확인할 수 있습니다.
+      </p>
+      <p>
+        자세한 내용은
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>과
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase 개인정보처리방침</a>을 확인할 수 있습니다.
+        Studio Eliud는 법령에 따른 경우 또는 위 서비스를 제공하는 데 필요한 경우를 제외하고 이용자의 개인정보를 임의로 판매하거나 제공하지 않습니다.
       </p>
 
       <h3>5. 아동의 개인정보</h3>
@@ -187,6 +214,8 @@
       <p>
         이용자는 본인의 개인정보 또는 랭킹 데이터에 대해 열람, 정정, 삭제를 요청할 수 있습니다.
         요청은 본 페이지 하단의 문의 이메일을 통해 접수할 수 있습니다.
+        Android용 Google Play 버전에서 개인정보 선택 화면이 필요한 경우 게임 설정에서 광고 개인정보 선택을 다시 열 수 있으며,
+        Android 설정에서 광고 ID를 재설정하거나 삭제할 수도 있습니다.
       </p>
 
       <h3>7. 개인정보 보호 조치</h3>
@@ -197,7 +226,8 @@
       <h3>8. 권한 사용 안내</h3>
       <p>K-Demon Chaser는 다음 앱 권한을 사용할 수 있습니다.</p>
       <ul>
-        <li>인터넷 접근 권한: 랭킹 서버 연동 및 게임 기록 전송에 사용됩니다.</li>
+        <li>인터넷 접근 권한: 랭킹 서버 연동, 광고 제공 및 Google Play 결제 통신에 사용됩니다.</li>
+        <li>광고 ID 권한(Android): Google AdMob이 광고 제공, 분석 및 부정행위 방지를 위해 광고 ID에 접근할 수 있도록 사용됩니다.</li>
         <li>진동 권한: 구슬 연결 및 전투 피드백 효과에 사용됩니다.</li>
       </ul>
       <p>그 외 민감한 개인정보 권한은 요청하지 않습니다.</p>
@@ -229,9 +259,15 @@
         <li>App version, device information, access time, and other technical information required for service operation</li>
         <li>Non-identifiable usage information for bug analysis and service improvement</li>
       </ul>
+      <p>The Google Play version for Android may additionally process the following information to provide advertising and in-app purchases.</p>
+      <ul>
+        <li>Google Mobile Ads SDK (AdMob): IP address (which may be used to estimate general location), app interactions such as app launches, taps, and video views, app and SDK diagnostic information, Android advertising ID (AAID), app set ID, and other device or account identifiers</li>
+        <li>Google Play Billing: product ID, purchase token, purchase status, and other transaction information required to provide and restore the ad-removal entitlement</li>
+      </ul>
       <p>
         The game does not directly collect sensitive personal information such as national identification numbers,
-        home addresses, phone numbers, or payment card information.
+        home addresses, phone numbers, or payment card information. Payment card information is processed by Google Play
+        and is not provided to Studio Eliud or the game.
       </p>
 
       <h3>2. How We Use Information</h3>
@@ -239,7 +275,9 @@
       <ul>
         <li>Saving gameplay records</li>
         <li>Providing online rankings</li>
-        <li>Preventing fraudulent or abnormal use</li>
+        <li>Preventing fraudulent use, advertising fraud, and security threats</li>
+        <li>Serving ads, managing ad frequency, and measuring and analyzing ad performance</li>
+        <li>Verifying and restoring Google Play purchase entitlements</li>
         <li>Identifying bugs and improving service stability</li>
         <li>Responding to user inquiries</li>
         <li>Improving updates and overall service quality</li>
@@ -250,6 +288,11 @@
         Information is retained only for as long as necessary to provide the service.
         When a user requests deletion, or when the purpose of processing has been fulfilled, the information will be deleted
         or anonymized without delay, unless retention is required by applicable law.
+      </p>
+      <p>
+        Local data such as settings, game progress, scores, and purchase entitlements is stored on the user's device
+        and may be deleted when app data is cleared or the app is uninstalled. Information processed by Google and Supabase
+        is retained according to each provider's policies and legal obligations.
       </p>
 
       <h3>4. Third-Party Services and Data Processing</h3>
@@ -266,8 +309,22 @@
         <li>Technical information required for service operation</li>
       </ul>
       <p>
-        Studio Eliud does not sell or provide users’ personal information to third parties, except where required by law
-        or necessary to provide the service.
+        <strong>Google AdMob and User Messaging Platform (UMP):</strong>
+        The Google Play version for Android uses Google AdMob to provide interstitial and rewarded ads.
+        The Google Mobile Ads SDK may automatically collect and share with Google the advertising-related information listed above
+        for advertising, analytics, and fraud prevention. Where privacy consent is required, UMP presents a consent or privacy choices form.
+        When required, users can revisit or change those choices through “Privacy Choices” in the game settings.
+      </p>
+      <p>
+        <strong>Google Play Billing:</strong>
+        The ad-removal product uses Google Play's billing system. Google processes payments and transactions,
+        while the game may verify the product ID, purchase token, and purchase status to provide and restore the entitlement.
+      </p>
+      <p>
+        For more information, see the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a>.
+        Studio Eliud does not sell users' personal information or disclose it except where required by law or necessary to provide these services.
       </p>
 
       <h3>5. Children’s Privacy</h3>
@@ -280,6 +337,8 @@
       <p>
         Users may request access, correction, or deletion of their personal information or ranking data.
         Requests can be submitted through the contact email at the bottom of this page.
+        When a privacy choices form is required in the Google Play version for Android, it can be reopened from the game settings.
+        Users may also reset or delete the advertising ID in Android settings.
       </p>
 
       <h3>7. Data Protection</h3>
@@ -290,7 +349,8 @@
       <h3>8. App Permissions</h3>
       <p>K-Demon Chaser may use the following app permissions.</p>
       <ul>
-        <li>Internet access: Used to connect to the ranking server and submit game records.</li>
+        <li>Internet access: Used for ranking server communication, ad delivery, and Google Play Billing communication.</li>
+        <li>Advertising ID permission (Android): Allows Google AdMob to access the advertising ID for ad delivery, analytics, and fraud prevention.</li>
         <li>Vibration: Used for orb-linking feedback and battle effects.</li>
       </ul>
       <p>No other sensitive personal data permissions are requested.</p>
@@ -322,8 +382,14 @@
         <li>App 版本、裝置資訊、連線時間等服務營運所需的技術資訊</li>
         <li>用於錯誤分析與服務改善的非識別化使用資訊</li>
       </ul>
+      <p>Android 版 Google Play 應用程式可能會為了提供廣告與應用程式內購買功能，另外處理以下資訊。</p>
+      <ul>
+        <li>Google Mobile Ads SDK（AdMob）：IP 位址（可能用於推測裝置的大致位置）、App 啟動、點擊與影片觀看等互動資料、App 與 SDK 診斷資訊、Android 廣告 ID（AAID）、App Set ID，以及其他裝置或帳戶識別碼</li>
+        <li>Google Play 結帳服務：商品 ID、購買權杖、購買狀態，以及提供與復原移除廣告權益所需的交易資訊</li>
+      </ul>
       <p>
         本遊戲不會直接收集身分證字號、住址、電話號碼、付款卡資料等敏感個人資料。
+        付款卡資料由 Google Play 處理，不會提供給 Studio Eliud 或本遊戲。
       </p>
 
       <h3>2. 資訊使用目的</h3>
@@ -331,7 +397,9 @@
       <ul>
         <li>保存遊戲進度與紀錄</li>
         <li>提供線上排行榜</li>
-        <li>防止不正當或異常使用</li>
+        <li>防止不正當使用、廣告詐欺與安全威脅</li>
+        <li>提供廣告、管理廣告頻率，以及衡量與分析廣告成效</li>
+        <li>驗證與復原 Google Play 購買權益</li>
         <li>確認遊戲錯誤並提升服務穩定性</li>
         <li>回覆使用者詢問</li>
         <li>改善更新內容與服務品質</li>
@@ -342,6 +410,11 @@
         資料會在提供服務所需的期間內保存。
         當使用者提出刪除請求，或資料處理目的已達成時，除法律要求保存的情況外，
         Studio Eliud 將盡快刪除資料或將其處理為無法識別個人的形式。
+      </p>
+      <p>
+        設定、遊戲進度、分數與購買權益等本機資料會儲存在使用者的裝置上，
+        清除 App 資料或解除安裝 App 時可能會一併刪除。Google 與 Supabase 所處理的資訊，
+        會依各服務供應商的政策與法定義務保存。
       </p>
 
       <h3>4. 第三方服務與資料處理</h3>
@@ -358,7 +431,22 @@
         <li>服務營運所需的技術資訊</li>
       </ul>
       <p>
-        除法律要求或提供服務所必要的情況外，Studio Eliud 不會任意出售或提供使用者的個人資料給第三方。
+        <strong>Google AdMob 與 User Messaging Platform（UMP）：</strong>
+        Android 版 Google Play 應用程式使用 Google AdMob 提供插頁式廣告與獎勵式廣告。
+        Google Mobile Ads SDK 可能會為了廣告、分析與防止詐欺，自動收集上述廣告相關資訊並與 Google 分享。
+        在依法需要隱私同意的地區，UMP 會顯示同意或隱私選項表單；如有要求，
+        使用者可在遊戲設定的「隱私選項」中再次查看或變更選擇。
+      </p>
+      <p>
+        <strong>Google Play 結帳服務：</strong>
+        移除廣告商品使用 Google Play 結帳系統。Google 負責處理付款與交易，
+        本遊戲可能會驗證商品 ID、購買權杖及購買狀態，以提供及復原購買權益。
+      </p>
+      <p>
+        詳情請參閱
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 隱私權政策</a>與
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase 隱私權政策</a>。
+        除法律要求或提供上述服務所必要的情況外，Studio Eliud 不會出售或任意揭露使用者的個人資料。
       </p>
 
       <h3>5. 兒童隱私</h3>
@@ -371,6 +459,8 @@
       <p>
         使用者可以要求查詢、更正或刪除其個人資料或排行榜資料。
         相關請求可透過本頁下方的電子郵件提出。
+        Android 版 Google Play 應用程式需要顯示隱私選項表單時，可從遊戲設定再次開啟。
+        使用者也可以在 Android 設定中重設或刪除廣告 ID。
       </p>
 
       <h3>7. 資料保護措施</h3>
@@ -381,7 +471,8 @@
       <h3>8. App 權限說明</h3>
       <p>K-Demon Chaser 可能會使用以下 App 權限。</p>
       <ul>
-        <li>網路存取權限：用於連接排行榜伺服器與傳送遊戲紀錄。</li>
+        <li>網路存取權限：用於排行榜伺服器通訊、提供廣告與 Google Play 結帳通訊。</li>
+        <li>廣告 ID 權限（Android）：允許 Google AdMob 為廣告提供、分析與防止詐欺而存取廣告 ID。</li>
         <li>震動權限：用於靈魂珠連線與戰鬥回饋效果。</li>
       </ul>
       <p>本遊戲不會要求其他敏感個人資料權限。</p>
@@ -398,7 +489,7 @@
     <section id="service-info" class="footer-info">
       <h2>시행일 및 문의 / Effective Date & Contact / 生效日與聯絡方式</h2>
 
-      <p><strong>시행일 / Effective Date / 生效日:</strong> 2026-06-17</p>
+      <p><strong>시행일 / Effective Date / 生效日:</strong> 2026-08-19</p>
       <p><strong>서비스명 / Service Name / 服務名稱:</strong> K-Demon Chaser</p>
       <p><strong>사업자 / Developer / 開發者:</strong> Studio Eliud</p>
       <p><strong>문의 / Contact / 聯絡信箱:</strong> studioeliud@gmail.com</p>
